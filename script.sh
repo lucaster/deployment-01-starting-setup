@@ -1,6 +1,9 @@
+docker container prune -f
+docker image prune -f
 docker build -t udemy-academind-docker-module09 .
 docker tag udemy-academind-docker-module09 lucaster/udemy-academind-docker-module09
 docker push lucaster/udemy-academind-docker-module09
+
 docker run -d --rm --name udemy-academind-docker-module09 -p 80:80 udemy-academind-docker-module09
 
 chmod 400 udemy-academind-docker-module09.pem

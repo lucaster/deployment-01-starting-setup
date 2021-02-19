@@ -7,7 +7,7 @@ docker push lucaster/udemy-academind-docker-module09
 docker run -d --rm --name udemy-academind-docker-module09 -p 80:80 udemy-academind-docker-module09
 
 chmod 400 udemy-academind-docker-module09.pem
-ssh -i "udemy-academind-docker-module09.pem" ec2-user@3.236.19.101
+ssh -i "udemy-academind-docker-module09.pem" ec2-user@44.192.43.250
 sudo yum update -y
 sudo amazon-linux-extras install docker
 sudo service docker start
